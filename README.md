@@ -1,7 +1,7 @@
 # ViralDynamics
 
 ## 1. Introduction
-====
+ViralDynamics is a Python framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework integrates functions such as contact network modeling, epidemic trend forecasting, high-order epidemic spreading analysis, and the design of prevention and control strategies.
 
 一、标题写法：
 第一种方法：
