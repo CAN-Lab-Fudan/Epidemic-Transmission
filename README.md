@@ -1,4 +1,7 @@
-# Epidemic Transmission
+# ViralDynamics
+
+Introduction
+===
 
 一、标题写法：
 第一种方法：
