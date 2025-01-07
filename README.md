@@ -1,9 +1,9 @@
 # ViralDynamics
 
 ## 1. Introduction
-**ViralDynamics** is a Python framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including contact network modeling, epidemic trend forecasting, epidemic analysis under continuous time, and prevention and control strategy design. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of ViralDynamics. 
+**ViralDynamics** is a Python framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including contact network modeling, epidemic trend forecasting, epidemic analysis under continuous time, and prevention and control strategy design. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
 
-Key features of ViralDynamics include:
+Key features of **ViralDynamics** include:
 1. **Contact Network Modeling**: We use the FudanWiFi13 as a case study to give a modeling approach for constructing a temporal contact network. Allows users to create dynamic networks that represent interactions within a population, simulating disease spread across different types of connections.
 
 2. **Epidemic Trend Forecasting**: Provides tools for predicting the course of an epidemic, based on real-time data and historical patterns.
