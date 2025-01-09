@@ -1,5 +1,5 @@
 # ViralDynamics
-<img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/logo.png" width="150px">
+<img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/logo.png" width="170px">
 
 ## 1. Introduction
 **ViralDynamics** is a Python framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including **TeNet** for real-time network modeling with large-scale WiFi data, **SubTrack** for trajectory planning using vast metro swipe card data, **TaHiP** for higher-order dynamics prediction, an **ε-SIS** dynamics simulation tool, and **EvoVax** for immunization game evolution analysis based on social perception. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
