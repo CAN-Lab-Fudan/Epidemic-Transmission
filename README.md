@@ -2,16 +2,18 @@
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/logo.png" width="180px">
 
 ## 1. Introduction
-**ViralDynamics** is a Python framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including **TeNet** for real-time network modeling with large-scale WiFi data, **SubTrack** for trajectory planning using vast metro swipe card data, **TaHiP** for higher-order dynamics prediction, an **ε-SIS** dynamics simulation tool, and **EvoVax** for immunization game evolution analysis based on social perception. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
+**ViralDynamics** is a Python framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including temporal network construction, trajectory planning, higher-order dynamics prediction, propagation dynamics simulation, and immunization game evolution analysis.. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
 
 Key features of **ViralDynamics** include:
-1. **Contact Network Modeling**: We use the FudanWiFi13 as a case study to give a modeling approach for constructing a temporal contact network. Allows users to create dynamic networks that represent interactions within a population, simulating disease spread across different types of connections.
+1. **TeNet**: A temporal network modeling tool for large-scale WiFi data. Allows users to create dynamic networks that represent interactions within a population, simulating disease spread across different types of connections.
 
-2. **Epidemic Trend Forecasting**: Provides tools for predicting the course of an epidemic, based on real-time data and historical patterns.
+2. **SubTrack**: A trajectory planning tool for massive metro swipe card data. Supports users in obtaining precise individual trajectories during metro trips to analyze mobility patterns.
 
-3. **Epidemic Analysis under Continuous Time**: Provides tools for simulating the susceptible-infected-susceptible models in continuous time.
+3. **TaHiP**: A high-order dynamics prediction tool. Allows users to accurately predict higher-order dynamic with unknown higher-order topology.
 
-4. **Prevention and Control Strategy Design**: Facilitates the design and evaluation of intervention strategies, helping users assess the effectiveness of measures like vaccination and quarantine.
+4. **ε-SIS**: A tool for simulating ε-susceptible-infected-susceptible (SIS) dynamics in continuous time.
+
+5. **EvoVax**: A social perception-based immunization game evolution analysis tool. 
 
 一、标题写法：
 第一种方法：
