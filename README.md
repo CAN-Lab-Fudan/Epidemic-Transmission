@@ -58,11 +58,22 @@ In dynamic population analysis and social network research, user contact data ba
 #### 2) Setup
 1. Clone or download this repository:
 ```bash
-git clone https://github.com/yourusername/contact-network-analysis.git
+git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/TeNet.git
 cd contact-network-analysis
 ```
 2. Place the raw data files (`records.mat` and `tbaps.txt`) in the root directory of the project.
 3. Open MATLAB and set the current directory to the project folder.
+
+#### 3) Running the Scripts:
+Follow these steps to run the tool:
+1. ## Data Import and Preprocessing ##:
+Run `openDataSetMain.m` and `RecordMain.m`:
+```matlab
+openDataSetMain; % Data cleaning and unit conversion
+RecordMain; % Filtering and user ID assignment
+```
+Output:
+* `tbdata.mat`: Contains preprocessed user data.
 
 
 
