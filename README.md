@@ -74,6 +74,7 @@ Follow these steps to run the tool:
    openDataSetMain; % Data cleaning and unit conversion
    RecordMain; % Filtering and user ID assignment
    ```
+  
   Output:
   * `tbdata.mat`: Contains preprocessed user data.
 
