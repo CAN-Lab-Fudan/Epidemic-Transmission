@@ -107,7 +107,7 @@ Follow these steps to run the tool:
 
 ### 2.4 FudanWiFi13
 
-   
+<img src="https://github.com/CAN-Lab-Fudan/ViralDynamic/blob/master/TeNet/FudanWiFi13/FudanWiFi13_framework.png" width="300px">   
 
 
 
