@@ -48,6 +48,21 @@ In dynamic population analysis and social network research, user contact data ba
   * Filter specific time ranges or user groups from the contact records.
   * Output filtered contact files.
 
+### 2.3 How to Run
+#### 1) Prerequisites:
+* MATLAB R2012b or later.
+* Input data files in the following format:
+  * **Raw data**: e.g., `records.mat` containing `userId`, `startTime`, `duration`, and `location`.
+  * **API mapping file**: e.g., `tbaps.txt` mapping access points to users.
+
+#### 2) Setup
+1. Clone or download this repository:
+```bash
+git clone https://github.com/yourusername/contact-network-analysis.git
+cd contact-network-analysis
+```
+2. Place the raw data files (`records.mat` and `tbaps.txt`) in the root directory of the project.
+3. Open MATLAB and set the current directory to the project folder.
 
 
 
