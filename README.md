@@ -70,10 +70,10 @@ Follow these steps to run the tool:
 1. **Data Import and Preprocessing**:
 
    Run `openDataSetMain.m` and `RecordMain.m`:
-```matlab
-openDataSetMain; % Data cleaning and unit conversion
-RecordMain; % Filtering and user ID assignment
-```
+   ```matlab
+   openDataSetMain; % Data cleaning and unit conversion
+   RecordMain; % Filtering and user ID assignment
+   ```
   Output:
   * `tbdata.mat`: Contains preprocessed user data.
 
