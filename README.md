@@ -15,6 +15,16 @@ Key features of **ViralDynamics** include:
 
 5. **EvoVax**: A social perception-based immunization game evolution analysis tool. 
 
+## 2. TeNet
+* Background Information
+In dynamic population analysis and social network research, user contact data based on wireless access points (APs) is a valuable resource. This data could be used to analyze the frequency and duration of user contacts, as well as their temporal and spatial distributions, providing insights into mobility patterns, group behaviors, and social network modeling.
+
+**TeNet** is a MATLAB-based framework for analyzing and processing user contact data. It enables data cleaning, construction of contact records, and statistical analysis of user interactions, ultimately generating contact networks and statistical summaries.
+
+* Key Features
+**TeNet** includes the following core functionalities:
+
+
 一、标题写法：
 第一种方法：
 1、在文本下面加上 等于号 = ，那么上方的文本就变成了大标题。等于号的个数无限制，但一定要大于0个哦。。
