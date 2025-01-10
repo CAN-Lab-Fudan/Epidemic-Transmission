@@ -66,6 +66,7 @@ cd contact-network-analysis
 
 #### 3) Running the Scripts:
 Follow these steps to run the tool:
+
 1. **Data Import and Preprocessing**:
 
 Run `openDataSetMain.m` and `RecordMain.m`:
