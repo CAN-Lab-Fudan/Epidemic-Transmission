@@ -110,10 +110,34 @@ Follow these steps to run the tool:
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamic/blob/master/TeNet/FudanWiFi13/FudanWiFi13_framework.png" width="950px">
 
 Using the provided scripts, we processed the **FudanWiFi13** dataset, containing:
-* 12,433 users
-* 1,124,026 login events
-* 206,892 user pairs
-* 2,331,597 interactions
+* **12,433 users**
+* **1,124,026 login events**
+* **206,892 user pairs**
+* **2,331,597 interactions**
+
+The generated files are as follows:
+1. ``dyadicdata_TimeINDetail.txt``:
+   * All records of user pairs.
+   * Format: ``User1, User2, StartTime (year, month, day, hour, minute), weekday, duration (min), AP information``.
+2. ``singleperson_For_regularSamples_anonymous_TimeINDetail.txt``:
+   * All records of individual users.
+   * Format: ``User ID, StartTime (year, month, day, hour, minute), weekday, duration (min), AP information``.
+3. ``dyadicID.txt``:
+   * Mapping of user pair IDs to corresponding users.
+   * Format: ``User Pair ID, User1, User2``.
+4. ``intervalBeyondDay.txt``:
+   * Event time intervals across different days.
+   * Format: ``User Pair ID, time_interval (min)``.
+5. ``intervalWithinDay.txt``:
+   * Event time intervals within the same day.
+   * Format: ``User Pair ID, time_interval (min)``.
+6. ``dailyNetwork.txt``:
+   * Daily network data.
+   * Format: ``User1, User2, Day number``.
+7. ``aggregated_Network.txt``:
+   * Aggregated network node statistics.
+   * Format: ``Node (User ID), occurrence count, degree``.
+These files provide a comprehensive dataset for researchers to analyze and study.
 
 
 
