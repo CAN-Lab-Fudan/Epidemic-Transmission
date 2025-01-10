@@ -33,6 +33,22 @@ In dynamic population analysis and social network research, user contact data ba
   * Filter records based on APs and time ranges.
   * Assign unique user IDs and output the processed user data.
 
+### 2) Contact Record Construction:
+* `PairwiseInteractionNetworkCreator.m`:
+  * Construct user contact records based on filtered user activity data.
+  * Output user pairs, interaction durations, and timestamps.
+
+### 3) Contact Duration and Frequency Statistics:
+* `StaticIntervalsCreator.m`:
+  * Analyze contact records to calculate interaction durations and frequencies.
+  * Output aggregated contact data.
+
+### 4) Contact Information Filtering:
+* `PartlyAggregated.m`:
+  * Filter specific time ranges or user groups from the contact records.
+  * Output filtered contact files.
+
+
 
 
 一、标题写法：
