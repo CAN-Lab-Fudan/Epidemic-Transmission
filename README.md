@@ -26,7 +26,7 @@ In dynamic population analysis and social network research, user contact data ba
 **TeNet** includes the following core functionalities:
 
 ### 1) Data Import and Preprocessing:
-* openDataSetMain.m:
+* 'openDataSetMain.m':
   * Import raw data, clean it, and perform unit conversion (e.g., convert contact duration from seconds to minutes).
   * Output formatted data files with userId, startTime, duration, and AP.
 * RecordMain.m:
