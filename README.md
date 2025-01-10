@@ -77,6 +77,38 @@ Follow these steps to run the tool:
    Output:
    * `tbdata.mat`: Contains preprocessed user data.
 
+2. **Construct Contact Records**:
+
+   Run `PairwiseInteractionNetworkCreator.m`:
+   ```matlab
+   PairwiseInteractionNetworkCreator;
+   ```
+   Output:
+   * `tbPairwiseInteraction.txt`: Records user contact information.
+   * `tbPairwiseInteraction.mat`: MATLAB file containing contact records.
+
+3. **Contact Duration and Frequency Statistics**:
+   Run `StaticIntervalsCreator.m`:
+   ```matlab
+   StaticIntervalsCreator;
+   ```
+   Output:
+   * `staticInterval.txt`: Detailed contact duration and frequency information.
+   * `AggregatedDuration.mat`: Aggregated contact duration statistics.
+   * `AggregatedNumber.mat`: Aggregated contact count statistics.
+
+4. **Filter Contact Information**:
+   Run ``PartlyAggregated.m``:
+   ```matlab
+   PartlyAggregated;
+   ```
+   Output:
+   * Filtered contact records based on user-specified criteria.
+
+### 2.4 FudanWiFi13
+
+   
+
 
 
 一、标题写法：
