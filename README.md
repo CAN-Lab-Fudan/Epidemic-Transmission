@@ -20,6 +20,7 @@ Key features of **ViralDynamics** include:
 
 In dynamic population analysis and social network research, user contact data based on wireless access points (APs) is a valuable resource. This data could be used to analyze the frequency and duration of user contacts, as well as their temporal and spatial distributions, providing insights into mobility patterns, group behaviors, and social network modeling.
 **TeNet** is a MATLAB-based framework for analyzing and processing user contact data. It enables data cleaning, construction of contact records, and statistical analysis of user interactions, ultimately generating contact networks and statistical summaries.
+Using this tool, we processed the **FudanWiFi13** dataset, generating several key outputs that can assist researchers in analyzing and understanding user interactions.
 
 ### 2.2 Key Features
 
@@ -107,6 +108,11 @@ Follow these steps to run the tool:
 
 ### 2.4 FudanWiFi13
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamic/blob/master/TeNet/FudanWiFi13/FudanWiFi13_framework.png" width="950px">   
+Using the provided scripts, we processed the **FudanWiFi13** dataset, containing:
+* 12,433 users
+* 1,124,026 login events
+* 206,892 user pairs
+* 2,331,597 interactions
 
 
 
