@@ -142,7 +142,9 @@ These files provide a comprehensive dataset for researchers to analyze and study
 
 ## 3. SubTrack
 ### 3.1 Background Information
+In modern urban transit systems, understanding passenger travel patterns is critical for improving subway operations and enhancing service quality. The **SubTrack** project simulates passenger trajectories within a subway system based on detailed smart card data. By analyzing passenger card swipe times and matching them to train schedules, the framework reconstructs the specific paths passengers take through the subway network.
 
+This tool provides valuable insights into passenger mobility patterns, travel behavior, and train utilization. By leveraging these insights, transit authorities can optimize subway schedules, enhance passenger experience, and conduct analyses for public health or operational planning. The track_assignment framework offers a robust method for processing and aligning these datasets to support these goals effectively.
 
 
 一、标题写法：
