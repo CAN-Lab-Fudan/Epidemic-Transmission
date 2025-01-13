@@ -169,6 +169,49 @@ This tool provides valuable insights into passenger mobility patterns, travel be
   * ``Train(i-1)/(i)_Time``: Subway passage time from microscope subway data.
   * ``Passenger_Time``: Passenger passage time from microscope passenger data.
 
+### 3.3 How to Run
+#### 1) Prerequisites:
+* Python 3.7 or later.
+* Required libraries: ``pandas``, ``numpy`` (``install with pip install pandas numpy``).
+* Input data files in the following formats:
+  * **Passenger Data**: CSV files named ``{line}_{direction}_stoptime.csv`` containing columns:
+    * Card Number.
+    * Passage Time.
+  * **Subway Data**: CSV files named ``{line}_{direction}_merged.csv`` containing columns:
+    * Train Number
+    * Passage Time.
+
+#### 2) Setup:
+1. Clone or download this repository:
+```bash
+git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/SubTrack.git
+cd track_assignment
+```
+
+2. Place the input data files in the appropriate directories:
+   * Passenger data: ``stoptime_passengers/{date_id}``.
+   * Subway data: ``subways_merged/{week_id}``.
+
+3. Ensure that the output directory ``matched/{date_id}`` exists or will be created during script execution.
+
+#### 3) Running the Scripts:
+Follow these steps to run the tool:
+
+1. **Data Import and Preprocessing**:
+   Run the script with the following command:
+   ```Python
+   python track_assignment.py <date_id> <week_id>
+   ```
+   * ``<date_id>``: Specifies the folder containing passenger data for a specific date (e.g., ``0417``, ``0423``).
+   * ``<week_id>``: Specifies the folder corresponding to the type of train schedule (e.g., ``workday``, ``weekend``).
+
+2. **Output**:
+   * Matched Passenger-Train Data (CSV files):
+     * Located in ``matched/{date_id}``.
+     * Filename format: ``{line}_{direction}_matched.csv``.
+     * Columns: ``Card Number``, ``Train Number``, ``Passage Time``.
+   
+
 
 
 一、标题写法：
