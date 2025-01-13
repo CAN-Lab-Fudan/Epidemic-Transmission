@@ -202,7 +202,6 @@ This tool provides valuable insights into passenger mobility patterns, travel be
 1. Clone or download this repository:
 ```bash
 git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/SubTrack.git
-cd track_assignment
 ```
 
 2. Place the input data files in the appropriate directories:
@@ -251,6 +250,38 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10794
 
 **TaHiP** includes the following core functionalities:
 
+#### 1) Flexible Hypergraph Formation:
+* **Synthetic Hypergraph Generation**: Create hypergraphs with adjustable edge size distributions (e.g., uniform, Poisson, or custom-defined).
+* **Real-World Hypergraph Support**: Load and process hypergraph datasets from social networks, biological systems, or legislative processes.
+
+### 2) Higher-Order Dynamics Modeling
+* Implements two key models for predicting dynamics:
+  * **Product Model**: Captures nonlinear interactions between nodes within hyperedges.
+  * **Threshold Model**: Simulates dynamics where node state changes are triggered by threshold-based hyperedge activations.
+* Suitable for modeling real-world processes such as social contagion, disease spread, and cooperative behaviors.
+
+### 3) Topology-Agnostic Prediction:
+* Predict higher-order dynamics without prior knowledge of the hypergraph topology.
+* Trains a **surrogate matrix** from observed nodal states, enabling predictions in systems with unknown or complex structures.
+
+### 4) Analysis of Hyperedge Size Effects
+* Analyzes how **mean hyperedge size** and its **distribution** affect prediction performance:
+  * Larger hyperedges increase prediction difficulty.
+  * Incorporating known hyperedge size distributions improves accuracy and reduces errors.
+
+### 4.3 How to Run
+#### 1) Prerequisites:
+* Python: ``3.8 <= Python <= 3.13``
+* Required libraries: ``matplotlib``, ``numpy``, ``scikit-learn``, ``torch==1.13.0``  (``install with pip install matplotlib numpy scikit-learn torch==1.13.0``).
+
+#### 2) Setup
+Clone or download this repository:
+```bash
+git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/TaHiP.git
+```
+#### 3) Running the Scripts:
+
+Follow these steps to run the tool:
 
 一、标题写法：
 第一种方法：
