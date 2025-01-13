@@ -357,6 +357,36 @@ Our paper is available at [this link](https://link.aps.org/doi/10.1103/PhysRevE.
 * Records the number of infected nodes over time, providing detailed insights into the progression of the disease.
 * Generates time-series data for post-simulation analysis and visualization.
 
+### 5.3 How to Run
+#### 1) Prerequisites:
+* Python 3.7 or later.
+* Required libraries: ``networkx``, ``numpy``, ``matplotlib``, ``tqdm``, ``heapq`` (``install with pip install networkx numpy matplotlib tqdm heapq``).
+
+#### 2) Setup
+Clone or download this repository:
+```bash
+git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/ε-SIS.git
+```
+
+#### 3) Running the Scripts:
+Execute the main simulation script:
+```Python
+python ε-SIS.py
+```
+
+### 4) Example Usage
+Below is an example workflow to simulate a ER network of 500 nodes with specific infection and recovery rates。 The specific adjustable parameters in ``ε-SIS.py``:
+```Python
+N = 100                          # Number of nodes
+p = 2 * np.log(N) / N            # Connection probability 
+G = nx.erdos_renyi_graph(N, p)   # Graph construction
+delta = 1                        # Recovery rate
+epsilon = 0.001                  # Spontaneous infection rate
+beta = 0.6 * delta               # Infection rate
+max_time = 30                    # Maximum Iteration Steps
+```
+
+
 一、标题写法：
 第一种方法：
 1、在文本下面加上 等于号 = ，那么上方的文本就变成了大标题。等于号的个数无限制，但一定要大于0个哦。。
