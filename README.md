@@ -163,7 +163,9 @@ This tool provides valuable insights into passenger mobility patterns, travel be
 #### 2) Passenger-Train Matching:
 * Match passengers to specific trains based on their passage time and the schedule of subway operations.
 * Passenger belongs to Train(i) if:
+  
   ``Train(i-1)_Time < Passenger_Time <= Train(i)_Time``
+  
 * Inputs:
   * ``Train(i-1)/(i)_Time``: Subway passage time from microscope subway data.
   * ``Passenger_Time``: Passenger passage time from microscope passenger data.
