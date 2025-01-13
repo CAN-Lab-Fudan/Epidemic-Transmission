@@ -149,8 +149,24 @@ This tool provides valuable insights into passenger mobility patterns, travel be
 ### 3.2 Key Features
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamic/blob/master/SubTrack/SubTrack_Framework.png" width="950px">
 
-``track_assignment`` include the following core functionalities:
+**SubTrack** includes the following core functionalities:
 
+#### 1) Data Import and Preprocessing:
+* **Passenger Data Processing**:
+  * Import passenger data from CSV files (e.g., ``stoptime_passengers/{date_id}``).
+  * Format data files with columns: Card Number, Passage Time.
+  * Perform unit conversion if necessary (e.g., ``timestamps``).
+* **Subway Data Processing**:
+  * Import subway operation data from CSV files (e.g., ``subways_merged/{week_id}``).
+  * Format data files with columns: ``Train Number``, ``Passage Time``.
+
+#### 2) Passenger-Train Matching:
+* Match passengers to specific trains based on their passage time and the schedule of subway operations.
+* Passenger belongs to Train(i) if:
+  ``Train(i-1)_Time < Passenger_Time <= Train(i)_Time``
+* Inputs:
+  * ``Train(i-1)/(i)_Time``: Subway passage time from microscope subway data.
+  * ``Passenger_Time``: Passenger passage time from microscope passenger data.
 
 
 
