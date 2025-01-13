@@ -249,6 +249,8 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10794
 ### 4.2 Key Features
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamic/blob/master/TaHiP/RaHiP_framework.png" width="600px">
 
+**TaHiP** includes the following core functionalities:
+
 
 一、标题写法：
 第一种方法：
