@@ -284,9 +284,10 @@ git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/TaHiP.git
 Follow these steps to run the tool:
 
 1. **Data Import and Preprocessing**:
-This step generates hypergraph structures from synthetic or real-world datasets.
 
-Run the following command:
+    This step generates hypergraph structures from synthetic or real-world datasets.
+
+    Run the following command:
 
 ```Python
 python run_hypergraph_formation.py
@@ -296,9 +297,10 @@ python run_hypergraph_formation.py
 * **Output**: Hypergraph structure saved in a specified format.
 
 2. **Training and Forecasting**
-This step trains the surrogate matrix on observed nodal states and forecasts future dynamics.
 
-Run the following command:
+    This step trains the surrogate matrix on observed nodal states and forecasts future dynamics.
+
+    Run the following command:
 
 ```Python
 python run_product_model_copredict.py
