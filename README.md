@@ -146,6 +146,10 @@ In modern urban transit systems, understanding passenger travel patterns is crit
 
 This tool provides valuable insights into passenger mobility patterns, travel behavior, and train utilization. By leveraging these insights, transit authorities can optimize subway schedules, enhance passenger experience, and conduct analyses for public health or operational planning. The track_assignment framework offers a robust method for processing and aligning these datasets to support these goals effectively.
 
+### 3.2 Key Features
+``track_assignment`` include the following core functionalities:
+
+
 
 一、标题写法：
 第一种方法：
