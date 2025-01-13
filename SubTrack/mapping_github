@@ -1,0 +1,75 @@
+import pandas as pd
+import os
+import time
+import sys
+from tqdm import tqdm  # 导入 tqdm
+
+date_id = sys.argv[1]
+week_id = sys.argv[2]
+
+def process_files(passenger_dir, train_times_dir, output_dir):
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    for passenger_filename in os.listdir(passenger_dir):
+        if passenger_filename.endswith('_stoptime.csv'):
+            parts = passenger_filename.split('_')
+            route_key = '_'.join(parts[0:2])  # 例如 '1号线_富锦路-莘庄'
+
+            train_times_filename = f'{route_key}_merged.csv'
+            train_times_filepath = os.path.join(train_times_dir, train_times_filename)
+
+            if os.path.exists(train_times_filepath):
+                print(f"Processing {passenger_filename} with {train_times_filename}")
+
+                passenger_df = pd.read_csv(os.path.join(passenger_dir, passenger_filename))
+                train_times_df = pd.read_csv(train_times_filepath)
+
+                # 转换时间格式
+                passenger_df['Passage Time'] = pd.to_datetime(passenger_df['Passage Time']).dt.strftime('%H:%M:%S')
+                passenger_df['Passage Time'] = pd.to_datetime(passenger_df['Passage Time'], format='%H:%M:%S')
+                train_times_df['Passage Time'] = pd.to_datetime(train_times_df['Passage Time'], format='%H:%M:%S')
+
+                # 分离凌晨时间的乘客数据
+                early_morning_passenger_df = passenger_df[passenger_df['Passage Time'].dt.hour < 4]
+                regular_passenger_df = passenger_df[passenger_df['Passage Time'].dt.hour >= 4]
+
+                # 处理凌晨乘客数据，筛选出车次大于23:59:59的地铁数据进行匹配
+                post_midnight_trains = train_times_df[train_times_df['Passage Time'].dt.hour <4]
+                early_morning_matched_df = pd.merge_asof(
+                    early_morning_passenger_df.sort_values('Passage Time'),
+                    post_midnight_trains.sort_values('Passage Time'),
+                    on='Passage Time',
+                    by=['Line', 'Station'],
+                    direction='forward'
+                )
+
+                 # 正常匹配其他时间段的乘客数据
+                regular_matched_df = pd.merge_asof(
+                    regular_passenger_df.sort_values('Passage Time'),
+                    train_times_df.sort_values('Passage Time'),
+                    on='Passage Time',
+                    by=['Line', 'Station'],
+                    direction='forward'
+                )
+
+                matched_df = pd.concat([early_morning_matched_df, regular_matched_df])
+
+                matched_df['Passage Time'] = matched_df['Passage Time'].dt.strftime('%H:%M:%S')
+
+                output_filepath = os.path.join(output_dir, f'{route_key}_matched.csv')
+                matched_df.to_csv(output_filepath, index=False)
+                print(f"Saved merged file to {output_filepath}")
+            else:
+                print(f"No matching train times file found for {passenger_filename}")
+
+passenger_dir = f'stoptime_passengers/{date_id}' 
+train_times_dir = f'subways_merged/{week_id}' 
+output_dir = f'matched/{date_id}'  
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
+
+start_time = time.time()
+process_files(passenger_dir, train_times_dir, output_dir)
+end_time = time.time()
+print(f'All processing completed in {end_time - start_time:.2f} seconds.')
