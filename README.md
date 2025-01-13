@@ -33,7 +33,9 @@ pages = {1276-1288},
 year = {2019},
 issn = {0378-4371},
 doi = {https://doi.org/10.1016/j.physa.2019.04.068},
-url = {https://www.sciencedirect.com/science/article/pii/S0378437119304169}
+url = {https://www.sciencedirect.com/science/article/pii/S0378437119304169},
+author = {Cong Li and Shumin Zhang and Xiang Li},
+keywords = {Social system, Location prediction, Familiar stranger, Social tie}
 }
 ```
 
