@@ -254,17 +254,17 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10794
 * **Synthetic Hypergraph Generation**: Create hypergraphs with adjustable edge size distributions (e.g., uniform, Poisson, or custom-defined).
 * **Real-World Hypergraph Support**: Load and process hypergraph datasets from social networks, biological systems, or legislative processes.
 
-### 2) Higher-Order Dynamics Modeling
+#### 2) Higher-Order Dynamics Modeling
 * Implements two key models for predicting dynamics:
   * **Product Model**: Captures nonlinear interactions between nodes within hyperedges.
   * **Threshold Model**: Simulates dynamics where node state changes are triggered by threshold-based hyperedge activations.
 * Suitable for modeling real-world processes such as social contagion, disease spread, and cooperative behaviors.
 
-### 3) Topology-Agnostic Prediction:
+#### 3) Topology-Agnostic Prediction:
 * Predict higher-order dynamics without prior knowledge of the hypergraph topology.
 * Trains a **surrogate matrix** from observed nodal states, enabling predictions in systems with unknown or complex structures.
 
-### 4) Analysis of Hyperedge Size Effects
+#### 4) Analysis of Hyperedge Size Effects
 * Analyzes how **mean hyperedge size** and its **distribution** affect prediction performance:
   * Larger hyperedges increase prediction difficulty.
   * Incorporating known hyperedge size distributions improves accuracy and reduces errors.
@@ -282,6 +282,34 @@ git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/TaHiP.git
 #### 3) Running the Scripts:
 
 Follow these steps to run the tool:
+
+1. **Data Import and Preprocessing**:
+This step generates hypergraph structures from synthetic or real-world datasets.
+
+Run the following command:
+
+```Python
+python run_hypergraph_formation.py
+```
+
+* **Input**: Raw data (e.g., hypergraph node and edge lists or configuration parameters for synthetic generation).
+* **Output**: Hypergraph structure saved in a specified format.
+
+2. **Training and Forecasting**
+This step trains the surrogate matrix on observed nodal states and forecasts future dynamics.
+
+Run the following command:
+
+```Python
+python run_product_model_copredict.py
+```
+* **Input**: Hypergraph structure, initial nodal states.
+* **Output**: Predicted nodal states over time.
+
+### 4.4 Acknowledgement
+We appreciate Professor Austin R. Benson and his team a lot for their valuable hypergraph datasets provided in https://www.cs.cornell.edu/~arb/data/
+
+
 
 一、标题写法：
 第一种方法：
