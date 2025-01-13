@@ -246,6 +246,8 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10794
   keywords={Power system dynamics;Topology;Heuristic algorithms;Mathematical models;Predictive models;Accuracy;Prediction algorithms;Vectors;Integrated circuit modeling;Training;Nonlinear system;dynamics on networks;predicting higher-order dynamics;contagion;hypergraph},
   doi={10.1109/TCSI.2024.3513406}}
 ```
+### 4.2 Key Features
+
 
 一、标题写法：
 第一种方法：
