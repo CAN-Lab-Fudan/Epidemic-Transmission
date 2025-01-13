@@ -228,8 +228,24 @@ Follow these steps to run the tool:
      * Filename format: ``{line}_{direction}_matched.csv``.
      * Columns: ``Card Number``, ``Train Number``, ``Passage Time``.
    
+## 4. TaHiP
+### 4.1 Background Information
+Predicting future dynamics on networks, especially hypergraphs with unknown topology, is a challenging task due to the complexity of higher-order interactions. This project introduces **TaHiP** (Topology-Agnostic Higher-Order Dynamics Prediction), a novel algorithm designed to predict dynamics on hypergraphs without requiring complete topology information. By leveraging observed nodal states to train a surrogate matrix, **TaHiP** accurately predicts future states on hypergraphs. Experiments show that **TaHiP** outperforms Transformer-based models in both synthetic and real-world settings, offering a robust solution for dynamic prediction tasks.
 
+Our paper is available at [this link](https://ieeexplore.ieee.org/document/10794522). Citations are welcome.
 
+```bibtex
+@ARTICLE{10794522,
+  author={Zhou, Zili and Li, Cong and Mieghem, Piet Van and Li, Xiang},
+  journal={IEEE Transactions on Circuits and Systems I: Regular Papers}, 
+  title={Predicting Higher-Order Dynamics With Unknown Hypergraph Topology}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-14},
+  keywords={Power system dynamics;Topology;Heuristic algorithms;Mathematical models;Predictive models;Accuracy;Prediction algorithms;Vectors;Integrated circuit modeling;Training;Nonlinear system;dynamics on networks;predicting higher-order dynamics;contagion;hypergraph},
+  doi={10.1109/TCSI.2024.3513406}}
+```
 
 一、标题写法：
 第一种方法：
