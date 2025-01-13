@@ -22,6 +22,21 @@ In dynamic population analysis and social network research, user contact data ba
 **TeNet** is a MATLAB-based framework for analyzing and processing user contact data. It enables data cleaning, construction of contact records, and statistical analysis of user interactions, ultimately generating contact networks and statistical summaries.
 Using this tool, we processed the **FudanWiFi13** dataset, generating several key outputs that can assist researchers in analyzing and understanding user interactions.
 
+Our paper is available at [this link](https://doi.org/10.1016/j.physa.2019.04.068). Citations are welcome.
+
+```bibtex
+@article{LI20191276,
+title = {Can multiple social ties help improve human location prediction?},
+journal = {Physica A: Statistical Mechanics and its Applications},
+volume = {525},
+pages = {1276-1288},
+year = {2019},
+issn = {0378-4371},
+doi = {https://doi.org/10.1016/j.physa.2019.04.068},
+url = {https://www.sciencedirect.com/science/article/pii/S0378437119304169}
+}
+```
+
 ### 2.2 Key Features
 
 **TeNet** includes the following core functionalities:
