@@ -311,6 +311,11 @@ python run_product_model_copredict.py
 ### 4.4 Acknowledgement
 We appreciate Professor Austin R. Benson and his team a lot for their valuable hypergraph datasets provided in https://www.cs.cornell.edu/~arb/data/
 
+## 5. ε-SIS
+### 5.1 Background Information
+The **ε-SIS** model is an extension of the classical Susceptible-Infected-Susceptible (SIS) framework, designed to better capture the complexity of real-world infection dynamics. By introducing a spontaneous infection mechanism governed by an external infection rate ε, the model accounts for infections arising from environmental or external factors. This enhancement allows the **ε-SIS** model to simulate persistent and reoccurring infections, even in the absence of direct neighbor-to-neighbor transmission. Employing an event-driven, continuous-time method, this project efficiently simulates disease spread in large-scale networks, offering fine-grained control over infection dynamics and generating insightful visualizations of epidemic progression.
+
+### 5.2 Key Features
 
 
 一、标题写法：
