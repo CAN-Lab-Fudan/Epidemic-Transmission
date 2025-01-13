@@ -315,8 +315,47 @@ We appreciate Professor Austin R. Benson and his team a lot for their valuable h
 ### 5.1 Background Information
 The **ε-SIS** model is an extension of the classical Susceptible-Infected-Susceptible (SIS) framework, designed to better capture the complexity of real-world infection dynamics. By introducing a spontaneous infection mechanism governed by an external infection rate ε, the model accounts for infections arising from environmental or external factors. This enhancement allows the **ε-SIS** model to simulate persistent and reoccurring infections, even in the absence of direct neighbor-to-neighbor transmission. Employing an event-driven, continuous-time method, this project efficiently simulates disease spread in large-scale networks, offering fine-grained control over infection dynamics and generating insightful visualizations of epidemic progression.
 
+Our paper is available at [this link](https://link.aps.org/doi/10.1103/PhysRevE.86.026116). Citations are welcome.
+
+```bibtex
+@article{PhysRevE.86.026116,
+  title = {Susceptible-infected-susceptible model: A comparison of $N$-intertwined and heterogeneous mean-field approximations},
+  author = {Li, Cong and van de Bovenkamp, Ruud and Van Mieghem, Piet},
+  journal = {Phys. Rev. E},
+  volume = {86},
+  issue = {2},
+  pages = {026116},
+  numpages = {9},
+  year = {2012},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.86.026116},
+  url = {https://link.aps.org/doi/10.1103/PhysRevE.86.026116}
+}
+```
+
 ### 5.2 Key Features
 
+**ε-SIS** includes the following core functionalities:
+
+#### 1) Disease Transmission Modeling:
+* **Neighbor-to-Neighbor** Transmission:
+  * Simulates disease spread through direct interactions between neighboring nodes.
+  * Models infection events based on an infection rate β with transmission times sampled from an exponential distribution.
+* **Spontaneous Infection**:
+  * Incorporates infections caused by **external environmental** or **stochastic factors**.
+  * Models infection events driven by a spontaneous infection rate ε ensuring realistic persistence of disease.
+
+#### 2) Event-Driven Continuous-Time Simulation:
+* **Efficient Event Processing**:
+  * Uses a **priority queue** to dynamically manage and process infection, recovery, and spontaneous infection events.
+  * Ensures simulation scalability for large-scale networks by updating only the nodes involved in an event.
+* **Stochastic Timing**:
+  * Simulates events based on **exponential distributions**, reflecting the probabilistic nature of real-world dynamics.
+
+#### 3) Infection Dynamics Tracking:
+* Records the number of infected nodes over time, providing detailed insights into the progression of the disease.
+* Generates time-series data for post-simulation analysis and visualization.
 
 一、标题写法：
 第一种方法：
