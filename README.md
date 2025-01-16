@@ -1,6 +1,8 @@
 # ViralDynamics
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/logo.png" width="180px">
 
+![PyPI](https://img.shields.io/pypi/v/<package_name>.svg)
+
 ## 1. Introduction
 **ViralDynamics** is a Python & Matlab framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including temporal network construction, trajectory planning, higher-order dynamics prediction, propagation dynamics simulation, and immunization game evolution analysis.. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
 
