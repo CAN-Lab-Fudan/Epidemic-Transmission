@@ -291,24 +291,24 @@ Follow these steps to run the tool:
 
     Run the following command:
 
-```Python
-python run_hypergraph_formation.py
-```
+   ```Python
+   python run_hypergraph_formation.py
+   ```
 
-* **Input**: Raw data (e.g., hypergraph node and edge lists or configuration parameters for synthetic generation).
-* **Output**: Hypergraph structure saved in a specified format.
+   * **Input**: Raw data (e.g., hypergraph node and edge lists or configuration parameters for synthetic generation).
+   * **Output**: Hypergraph structure saved in a specified format.
 
 2. **Training and Forecasting**
 
     This step trains the surrogate matrix on observed nodal states and forecasts future dynamics.
 
     Run the following command:
+   ```Python
+   python run_product_model_copredict.py
+   ```
 
-```Python
-python run_product_model_copredict.py
-```
-* **Input**: Hypergraph structure, initial nodal states.
-* **Output**: Predicted nodal states over time.
+   * **Input**: Hypergraph structure, initial nodal states.
+   * **Output**: Predicted nodal states over time.
 
 ### 4.4 Acknowledgement
 We appreciate Professor Austin R. Benson and his team a lot for their valuable hypergraph datasets provided in https://www.cs.cornell.edu/~arb/data/
@@ -446,12 +446,13 @@ Follow these steps to run the tool:
 
    Run the following command:
 
-```Python
-python Model_Code_Opt_Data.py
-```
-* **Output**: `network_data.txt` includes:
-  *  Nodes
-  *  Network link.
+   ```Python
+   python Model_Code_Opt_Data.py
+   ```
+
+   * **Output**: `network_data.txt` includes:
+     *  Nodes
+     *  Network link.
 
 2. **Individual Protection Level Calculation**:
 
@@ -459,12 +460,12 @@ python Model_Code_Opt_Data.py
 
    Run the following command:
 
-```Python
-python ProtLevLambDel_code.py
-```
+   ```Python
+   python ProtLevLambDel_code.py
+   ```
 
-* **Output**:
-  * `protection_levels.txt`: the individual protection level.
+   * **Output**:
+     * `protection_levels.txt`: the individual protection level.
 
 3. **Information Diffusion and Epidemic Spreading**:
 
@@ -472,14 +473,14 @@ python ProtLevLambDel_code.py
 
    Run the following command:
 
-```Python
-python McRhIRhA_code_end.py
-```
+   ```Python
+   python McRhIRhA_code_end.py
+   ```
 
-* **Input**: `network_data.txt` and `protection_levels.txt`
-* **Output**:
-  * ``PA.txt``: the fraction of aware individuals.
-  * ``PI.txt``: the fraction of infected individuals.
+   * **Input**: `network_data.txt` and `protection_levels.txt`
+   * **Output**:
+     * ``PA.txt``: the fraction of aware individuals.
+     * ``PI.txt``: the fraction of infected individuals.
 
 4. **Vaccination Strategy Updates**:
 
@@ -487,14 +488,14 @@ python McRhIRhA_code_end.py
 
    Run the following command:
 
-```Python
-python Transi_inf_epi_upda.py
-```
+   ```Python
+   python Transi_inf_epi_upda.py
+   ```
 
- * **Input**: `network_data.txt`, `protection_levels.txt`, `PA.txt`` and ``PI.txt``.
- * **Output**:
-   * ``result_x.txt``: the fraction of vaccinated individuals.
-   * ``result_I.txt``: the fraction of infected individuals.
+   * **Input**: `network_data.txt`, `protection_levels.txt`, `PA.txt`` and ``PI.txt``.
+   * **Output**:
+     * ``result_x.txt``: the fraction of vaccinated individuals.
+     * ``result_I.txt``: the fraction of infected individuals.
 
 ## 7. Feature Work
 As **ViralDynamic** continues to evolve, our primary goal is to enhance its capabilities and expand its applicability in epidemic modeling, data analysis, and decision-making processes. Below are some key areas we plan to focus on in the future:
