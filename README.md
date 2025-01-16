@@ -408,67 +408,97 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10124
 ### 6.2 Key Features
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamic/blob/master/EvoVax/EvoVax_framework.png" width="950px">
 
+**EvoVax** includes the following core functionalities:
 
+#### 1) Coupled-network Modeling:
+* **Physical Contact Layer**: Constructs a synthetic network to characterise physical connections between individuals.
+* **Information Layer**: Constructs a synthetic network to simulate messaging.
 
-一、标题写法：
-第一种方法：
-1、在文本下面加上 等于号 = ，那么上方的文本就变成了大标题。等于号的个数无限制，但一定要大于0个哦。。
-2、在文本下面加上 下划线 - ，那么上方的文本就变成了中标题，同样的 下划线个数无限制。
-3、要想输入=号，上面有文本而不让其转化为大标题，则需要在两者之间加一个空行。
-另一种方法：（推荐这种方法；注意⚠️中间需要有一个空格）
-关于标题还有等级表示法，分为六个等级，显示的文本大小依次减小。不同等级之间是以井号  #  的个数来标识的。一级标题有一个 #，二级标题有两个# ，以此类推。
-例如：
-# 一级标题  
-## 二级标题  
-### 三级标题  
-#### 四级标题  
-##### 五级标题  
-###### 六级标题 
-二、编辑基本语法  
-1、字体格式强调
- 我们可以使用下面的方式给我们的文本添加强调的效果
-*强调*  (示例：斜体)  
- _强调_  (示例：斜体)  
-**加重强调**  (示例：粗体)  
- __加重强调__ (示例：粗体)  
-***特别强调*** (示例：粗斜体)  
-___特别强调___  (示例：粗斜体)  
-2、代码  
-`<hello world>`  
-3、代码块高亮  
+#### 2) Information Diffusion and Epidemic Spreading:
+* Simulates the diffusion of information and its effect on epidemic transmission.
+* Models how social factors, such as information exposure and individual trust, influence behavior during an epidemic, including protective actions and vaccination uptake.
+* Incorporates dynamic individual protection levels based on personal perceptions, behavior changes, and exposure to information.
+
+#### 3) Vaccination Strategy Updates:
+* Calculate the payoff of individuals based on pairwise comparison rules for strategy updates.
+* Model iteration to steady state yields immunological proportions.
+
+### 6.3 How to Run
+#### 1) Prerequisites:
+* Python 3.8 or later.
+* Required libraries: ``networkx``, ``numpy``, ``matplotlib``, ``math``, ``random``  (``install with pip install networkx, numpy, matplotlib, math, random``).
+
+#### 2) Setup
+Clone or download this repository:
+```bash
+git clone https://github.com/CAN-Lab-Fudan/ViralDynamic/tree/master/EvoVax.git
 ```
-@Override
-protected void onDestroy() {
-    EventBus.getDefault().unregister(this);
-    super.onDestroy();
-}
-```  
-4、表格 （建议在表格前空一行，否则可能影响表格无法显示）
- 
- 表头  | 表头  | 表头
- ---- | ----- | ------  
- 单元格内容  | 单元格内容 | 单元格内容 
- 单元格内容  | 单元格内容 | 单元格内容  
- 
-5、其他引用
-图片  
-![图片名称](https://www.baidu.com/img/bd_logo1.png)  
-链接  
-[链接名称](https://www.baidu.com/)    
-6、列表 
-1. 项目1  
-2. 项目2  
-3. 项目3  
-   * 项目1 （一个*号会显示为一个黑点，注意⚠️有空格，否则直接显示为*项目1） 
-   * 项目2   
- 
-7、换行（建议直接在前一行后面补两个空格）
-直接回车不能换行，  
-可以在上一行文本后面补两个空格，  
-这样下一行的文本就换行了。
-或者就是在两行文本直接加一个空行。
-也能实现换行效果，不过这个行间距有点大。  
- 
-8、引用
-> 第一行引用文字  
-> 第二行引用文字   
+
+#### 3) Running the Scripts:
+
+Follow these steps to run the tool:
+
+1. **Generation Data**:
+
+   This step generates network data and save it as a txt file or reference the file to generate related network data.
+
+   Run the following command:
+
+```Python
+python Model_Code_Opt_Data.py
+```
+* **Output**: `network_data.txt` includes:
+*  Nodes
+*  Network link.
+
+2. **Individual Protection Level Calculation**:
+
+   This step generates the individual protection level.
+
+   Run the following command:
+
+```Python
+python ProtLevLambDel_code.py
+```
+
+* **Output**: `protection_levels.txt` save data about individual protection level.
+
+3. **Information Diffusion and Epidemic Spreading**:
+
+   This step simulates the dynamic of information diffusion and epidemic spreading
+
+   Run the following command:
+
+```Python
+python McRhIRhA_code_end.py
+```
+
+* **Input**: `network_data.txt` and `protection_levels.txt`
+* **Output**:
+* ``PA.txt``: the fraction of aware individuals.
+* ``PI.txt``: the fraction of infected individuals.
+
+4. **Vaccination Strategy Updates**:
+
+   This step simulates an immune policy update.
+
+   Run the following command:
+
+```Python
+python Transi_inf_epi_upda.py
+```
+
+ * **Input**: `network_data.txt`, `protection_levels.txt`, `PA.txt`` and ``PI.txt``.
+ * **Output**:
+ * ``result_x.txt``: the fraction of vaccinated individuals.
+ * ``result_I.txt``: the fraction of infected individuals.
+
+## 7. Feature Work
+As **ViralDynamic** continues to evolve, our primary goal is to enhance its capabilities and expand its applicability in epidemic modeling, data analysis, and decision-making processes. Below are some key areas we plan to focus on in the future:
+* **Integration of Multi-Source Data**: We aim to expand **ViralDynamic**' ability to integrate diverse data sources, including real-time data from wearable devices, health monitoring systems, and social media platforms. This will improve the accuracy of epidemic spread predictions by incorporating more granular, real-time user behavior data.
+
+* **Personalized Epidemic Modeling**: Moving forward, **ViralDynamic** will focus on personalizing epidemic simulations to account for heterogeneous population characteristics. This will include simulating individual-level responses to public health measures, such as vaccination campaigns or social distancing, based on factors like health status, risk perception, and behavioral tendencies.
+
+* **Advanced Machine Learning Algorithms for Prediction**: We plan to incorporate cutting-edge machine learning techniques, including reinforcement learning and deep learning models, to enhance the framework's prediction accuracy. By integrating these models, **ViralDynamic** will be able to forecast epidemic dynamics with even greater precision, enabling more proactive public health interventions.
+
+* **Collaborative and Scalable Solutions**: In the future, we envision **ViralDynamic** as a collaborative platform that allows for easy integration with other public health and epidemiology tools. By providing scalable solutions for large-scale epidemic simulations, **ViralDynamic** will contribute to global epidemic preparedness and response efforts.
