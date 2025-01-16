@@ -450,9 +450,9 @@ Follow these steps to run the tool:
    python Model_Code_Opt_Data.py
    ```
 
-   * **Output**: `network_data.txt` includes:
-     *  Nodes
-     *  Network link.
+  * **Output**: `network_data.txt` includes:
+    *  Nodes
+    *  Network link.
 
 2. **Individual Protection Level Calculation**:
 
@@ -464,8 +464,8 @@ Follow these steps to run the tool:
    python ProtLevLambDel_code.py
    ```
 
-   * **Output**:
-     * `protection_levels.txt`: the individual protection level.
+  * **Output**:
+    * `protection_levels.txt`: the individual protection level.
 
 3. **Information Diffusion and Epidemic Spreading**:
 
@@ -477,10 +477,10 @@ Follow these steps to run the tool:
    python McRhIRhA_code_end.py
    ```
 
-   * **Input**: `network_data.txt` and `protection_levels.txt`
-   * **Output**:
-     * ``PA.txt``: the fraction of aware individuals.
-     * ``PI.txt``: the fraction of infected individuals.
+  * **Input**: `network_data.txt` and `protection_levels.txt`
+  * **Output**:
+    * ``PA.txt``: the fraction of aware individuals.
+    * ``PI.txt``: the fraction of infected individuals.
 
 4. **Vaccination Strategy Updates**:
 
@@ -492,10 +492,10 @@ Follow these steps to run the tool:
    python Transi_inf_epi_upda.py
    ```
 
-   * **Input**: `network_data.txt`, `protection_levels.txt`, `PA.txt`` and ``PI.txt``.
-   * **Output**:
-     * ``result_x.txt``: the fraction of vaccinated individuals.
-     * ``result_I.txt``: the fraction of infected individuals.
+  * **Input**: `network_data.txt`, `protection_levels.txt`, `PA.txt`` and ``PI.txt``.
+  * **Output**:
+    * ``result_x.txt``: the fraction of vaccinated individuals.
+    * ``result_I.txt``: the fraction of infected individuals.
 
 ## 7. Feature Work
 As **ViralDynamic** continues to evolve, our primary goal is to enhance its capabilities and expand its applicability in epidemic modeling, data analysis, and decision-making processes. Below are some key areas we plan to focus on in the future:
