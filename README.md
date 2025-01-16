@@ -2,6 +2,7 @@
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/logo.png" width="180px">
 
 python_requires='>=3.7' 
+
 ![License](https://img.shields.io/badge/license-Apache 2.0-blue.svg)
 
 ## 1. Introduction
