@@ -15,7 +15,7 @@ Key features of **ViralDynamics** include:
 
 5. **EvoVax**: A social perception-based immunization game evolution analysis tool. 
 
-<img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/ViralDynamics_framework.png" width="950px">
+<img src="https://github.com/CAN-Lab-Fudan/ViralDynamic/blob/master/ViralDynamic_framework.png" width="950px">
 
 ## 2. TeNet
 ### 2.1 Background Information
