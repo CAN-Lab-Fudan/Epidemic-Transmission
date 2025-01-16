@@ -1,4 +1,4 @@
-# ViralDynamics
+# ViralDynamic
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/logo.png" width="180px">
 
 ![Release](https://img.shields.io/badge/release-v1.0.0-blue.svg) ![Python Version](https://img.shields.io/badge/python-%3E%3D%203.7-blue.svg) ![Matlab Version](https://img.shields.io/badge/Matlab%202018b-blue.svg)
@@ -6,9 +6,9 @@
 
 
 ## 1. Introduction
-**ViralDynamics** is a Python & Matlab framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including temporal network construction, trajectory planning, higher-order dynamics prediction, propagation dynamics simulation, and immunization game evolution analysis.. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
+**ViralDynamic** is a Python & Matlab framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including temporal network construction, trajectory planning, higher-order dynamics prediction, propagation dynamics simulation, and immunization game evolution analysis.. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamic**. 
 
-Key features of **ViralDynamics** include:
+Key features of **ViralDynamic** include:
 1. **TeNet**: A temporal network modeling tool for large-scale WiFi data. Allows users to create dynamic networks that represent interactions within a population, simulating disease spread across different types of connections.
 
 2. **SubTrack**: A trajectory planning tool for massive metro swipe card data. Supports users in obtaining precise individual trajectories during metro trips to analyze mobility patterns.
