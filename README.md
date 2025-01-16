@@ -2,7 +2,7 @@
 <img src="https://github.com/CAN-Lab-Fudan/ViralDynamics/blob/master/logo.png" width="180px">
 
 ## 1. Introduction
-**ViralDynamics** is a Python framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including temporal network construction, trajectory planning, higher-order dynamics prediction, propagation dynamics simulation, and immunization game evolution analysis.. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
+**ViralDynamics** is a Python & Matlab framework specifically developed for the simulation and analysis of epidemic spreading on complex networks. The framework combines several essential functionalities, including temporal network construction, trajectory planning, higher-order dynamics prediction, propagation dynamics simulation, and immunization game evolution analysis.. This tutorial aims to help you get started. By completing this tutorial, you will discover the core functionalities of **ViralDynamics**. 
 
 Key features of **ViralDynamics** include:
 1. **TeNet**: A temporal network modeling tool for large-scale WiFi data. Allows users to create dynamic networks that represent interactions within a population, simulating disease spread across different types of connections.
@@ -386,6 +386,21 @@ beta = 0.6 * delta               # Infection rate
 max_time = 30                    # Maximum Iteration Steps
 ```
 
+## 6. EvoVax
+Traditional immune strategies often assume uniform individual attitudes toward epidemics, epidemic-related information, and vaccination, with less attention to individual heterogeneity and psychological factors. **EvoVax** addresses this by incorporating prospect theory and a two-layer network model to capture how individual perceptions and social factors influence vaccination decisions. **EvoVax** offers more personalized, accurate, and flexible immune strategies, improving epidemic control in dynamic environment.
+
+Our paper is available at [this link](https://ieeexplore.ieee.org/document/10124338). Citations are welcome.
+
+@ARTICLE{10124338,
+  author={Li, Cong and Dai, Jin-Ying and Li, Xiang},
+  journal={IEEE Transactions on Computational Social Systems}, 
+  title={Imperfect Vaccination Evolutionary Game Incorporating Individual Social Difference and Subjective Perception}, 
+  year={2024},
+  volume={11},
+  number={2},
+  pages={2369-2382},
+  keywords={Epidemics;Vaccines;Behavioral sciences;Games;Costs;Psychology;Game theory;Epidemic spreading;prospect theory (PT);psychological cognition;social difference;vaccination game},
+  doi={10.1109/TCSS.2023.3271894}}
 
 一、标题写法：
 第一种方法：
