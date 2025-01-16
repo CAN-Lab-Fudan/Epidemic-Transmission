@@ -374,7 +374,7 @@ Execute the main simulation script:
 python ε-SIS.py
 ```
 
-### 4) Example Usage
+#### 4) Example Usage
 Below is an example workflow to simulate a ER network of 500 nodes with specific infection and recovery rates。 The specific adjustable parameters in ``ε-SIS.py``:
 ```Python
 N = 100                          # Number of nodes
