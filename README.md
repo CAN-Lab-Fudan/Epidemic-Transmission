@@ -387,10 +387,12 @@ max_time = 30                    # Maximum Iteration Steps
 ```
 
 ## 6. EvoVax
-Traditional immune strategies often assume uniform individual attitudes toward epidemics, epidemic-related information, and vaccination, with less attention to individual heterogeneity and psychological factors. **EvoVax** addresses this by incorporating prospect theory and a two-layer network model to capture how individual perceptions and social factors influence vaccination decisions. **EvoVax** offers more personalized, accurate, and flexible immune strategies, improving epidemic control in dynamic environment.
+### 6.1 Background Information
+Game theory provides a powerful framework for modeling strategic decision-making in situations where individuals' actions are interdependent, such as in epidemic control and vaccination strategies. Traditional immune strategies often assume uniform individual attitudes toward epidemics, epidemic-related information, and vaccination, with less attention to individual heterogeneity and psychological factors. **EvoVax** addresses this by incorporating prospect theory and a two-layer network model to capture how individual perceptions and social factors influence vaccination decisions. **EvoVax** offers more personalized, accurate, and flexible immune strategies, improving epidemic control in dynamic environment.
 
 Our paper is available at [this link](https://ieeexplore.ieee.org/document/10124338). Citations are welcome.
 
+```bibtex
 @ARTICLE{10124338,
   author={Li, Cong and Dai, Jin-Ying and Li, Xiang},
   journal={IEEE Transactions on Computational Social Systems}, 
@@ -401,6 +403,11 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10124
   pages={2369-2382},
   keywords={Epidemics;Vaccines;Behavioral sciences;Games;Costs;Psychology;Game theory;Epidemic spreading;prospect theory (PT);psychological cognition;social difference;vaccination game},
   doi={10.1109/TCSS.2023.3271894}}
+```
+
+### 6.2 Key Features
+
+
 
 一、标题写法：
 第一种方法：
