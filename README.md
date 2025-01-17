@@ -15,7 +15,7 @@ Key features of **ViralDynamic** include:
 
 3. **TaHiP**: A high-order dynamics prediction tool. Allows users to accurately predict higher-order dynamic with unknown higher-order topology.
 
-4. **ε-SIS**: A tool for simulating ε-susceptible-infected-susceptible (SIS) dynamics in continuous time.
+4. **ε-SIS**: A tool for simulating ε-susceptible-infected-susceptible (ε-SIS) dynamics in continuous time.
 
 5. **EvoVax**: A social perception-based immunization game evolution analysis tool. 
 
