@@ -224,8 +224,8 @@ Follow these steps to run the tool:
    ```Python
    python track_assignment.py <date_id> <week_id>
    ```
-   * ``<date_id>``: Specifies the folder containing passenger data for a specific date (e.g., ``0417``, ``0423``).
-   * ``<week_id>``: Specifies the folder corresponding to the type of train schedule (e.g., ``workday``, ``weekend``).
+   * ``<date_id>``: The specific date for folder containing passenger data (e.g., ``0417``, ``0423``).
+   * ``<week_id>``: The type of train schedule corresponding to the folder (e.g., ``workday``, ``weekend``).
 
 2. **Output**:
    * Matched Passenger-Train Data (CSV files):
