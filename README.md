@@ -99,7 +99,7 @@ Follow these steps to run the tool:
    RecordMain; % Filtering and user ID assignment
    ```
    Output:
-   * `tbdata.mat`: Contains preprocessed user data.
+   * `tbdata.mat`: Preprocessed user data.
 
 2. **Construct Contact Records**:
 
@@ -108,7 +108,7 @@ Follow these steps to run the tool:
    PairwiseInteractionNetworkCreator;
    ```
    Output:
-   * `tbPairwiseInteraction.txt`: Records user contact information.
+   * `tbPairwiseInteraction.txt`: User contact information.
    * `tbPairwiseInteraction.mat`: MATLAB file containing contact records.
 
 3. **Contact Duration and Frequency Statistics**:
