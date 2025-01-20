@@ -177,7 +177,7 @@ This tool provides valuable insights into passenger mobility patterns, travel be
 #### 1) Data Import and Preprocessing:
 * **Passenger Data Processing**:
   * Import passenger data from CSV files (e.g., ``stoptime_passengers/{date_id}``).
-  * Format data files with columns: Card Number, Passage Time.
+  * Format data files with columns: ``Card Number``, ``Passage Time``.
   * Perform unit conversion if necessary (e.g., ``timestamps``).
 * **Subway Data Processing**:
   * Import subway operation data from CSV files (e.g., ``subways_merged/{week_id}``).
