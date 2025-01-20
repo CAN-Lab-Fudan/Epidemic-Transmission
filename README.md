@@ -262,16 +262,16 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10794
 
 #### 2) Higher-Order Dynamics Modeling
 * Implements two key models for predicting dynamics:
-  * **Product Model**: Captures nonlinear interactions between nodes within hyperedges.
-  * **Threshold Model**: Simulates dynamics where node state changes are triggered by threshold-based hyperedge activations.
+  * **Product Model**: Capture nonlinear interactions between nodes within hyperedges.
+  * **Threshold Model**: Simulate dynamics where node state changes are triggered by threshold-based hyperedge activations.
 * Suitable for modeling real-world processes such as social contagion, disease spread, and cooperative behaviors.
 
 #### 3) Topology-Agnostic Prediction:
 * Predict higher-order dynamics without prior knowledge of the hypergraph topology.
-* Trains a **surrogate matrix** from observed nodal states, enabling predictions in systems with unknown or complex structures.
+* Train a **surrogate matrix** from observed nodal states, enabling predictions in systems with unknown or complex structures.
 
 #### 4) Analysis of Hyperedge Size Effects
-* Analyzes how **mean hyperedge size** and its **distribution** affect prediction performance:
+* Analyze how **mean hyperedge size** and its **distribution** affect prediction performance:
   * Larger hyperedges increase prediction difficulty.
   * Incorporating known hyperedge size distributions improves accuracy and reduces errors.
 
