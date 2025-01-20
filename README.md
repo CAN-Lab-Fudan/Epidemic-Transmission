@@ -235,7 +235,7 @@ Follow these steps to run the tool:
    
 ## 4. TaHiP
 ### 4.1 Background Information
-Predicting future dynamics on networks, especially hypergraphs with unknown topology, is a challenging task due to the complexity of higher-order interactions. This project introduces **TaHiP** (Topology-Agnostic Higher-Order Dynamics Prediction), a novel algorithm designed to predict dynamics on hypergraphs without requiring complete topology information. By leveraging observed nodal states to train a surrogate matrix, **TaHiP** accurately predicts future states on hypergraphs. Experiments show that **TaHiP** outperforms Transformer-based models in both synthetic and real-world settings, offering a robust solution for dynamic prediction tasks.
+Predicting future dynamics on networks, especially hypergraphs with unknown topology, is a challenging task due to the complexity of higher-order interactions. This project introduces **TaHiP** (Topology-Agnostic-Higher-Order Dynamics Prediction), a novel algorithm designed to predict dynamics on hypergraphs without requiring complete topology information. By leveraging observed nodal states to train a surrogate matrix, **TaHiP** accurately predicts future states on hypergraphs. Experiments show that **TaHiP** outperforms Transformer-based models in both synthetic and real-world settings, offering a robust solution for dynamic prediction tasks.
 
 Our paper is available at [this link](https://ieeexplore.ieee.org/document/10794522). Citations are welcome.
 
