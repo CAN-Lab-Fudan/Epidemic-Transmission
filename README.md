@@ -344,24 +344,24 @@ Our paper is available at [this link](https://link.aps.org/doi/10.1103/PhysRevE.
 
 **ε-SIS** includes the following core functionalities:
 
-#### 1) Disease Transmission Modeling:
+#### 1) Disease Spreading Modeling:
 * **Neighbor-to-Neighbor** Transmission:
-  * Simulates disease spread through direct interactions between neighboring nodes.
-  * Models infection events based on an infection rate β with transmission times sampled from an exponential distribution.
+  * Simulate disease spread through direct interactions between neighboring nodes.
+  * Model infection events based on an infection rate β with transmission times sampled from an exponential distribution.
 * **Spontaneous Infection**:
-  * Incorporates infections caused by **external environmental** or **stochastic factors**.
-  * Models infection events driven by a spontaneous infection rate ε ensuring realistic persistence of disease.
+  * Incorporate infections caused by **external environmental** or **stochastic factors**.
+  * Model infection events driven by a spontaneous infection rate ε ensuring realistic persistence of disease.
 
 #### 2) Event-Driven Continuous-Time Simulation:
 * **Efficient Event Processing**:
-  * Uses a **priority queue** to dynamically manage and process infection, recovery, and spontaneous infection events.
-  * Ensures simulation scalability for large-scale networks by updating only the nodes involved in an event.
+  * Use a **priority queue** to dynamically manage and process infection, recovery, and spontaneous infection events.
+  * Ensure simulation scalability for large-scale networks by updating only the nodes involved in an event.
 * **Stochastic Timing**:
-  * Simulates events based on **exponential distributions**, reflecting the probabilistic nature of real-world dynamics.
+  * Simulate events based on **exponential distributions**, reflecting the probabilistic nature of real-world dynamics.
 
 #### 3) Infection Dynamics Tracking:
-* Records the number of infected nodes over time, providing detailed insights into the progression of the disease.
-* Generates time-series data for post-simulation analysis and visualization.
+* Record the number of infected nodes over time, providing detailed insights into the progression of the disease.
+* Generate time-series data for post-simulation analysis and visualization.
 
 ### 5.3 How to Run
 #### 1) Prerequisites:
