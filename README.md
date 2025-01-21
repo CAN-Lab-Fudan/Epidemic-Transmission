@@ -417,13 +417,13 @@ Our paper is available at [this link](https://ieeexplore.ieee.org/document/10124
 **EvoVax** includes the following core functionalities:
 
 #### 1) Coupled-network Modeling:
-* **Physical Contact Layer**: Constructs a synthetic network to characterise physical connections between individuals.
-* **Information Layer**: Constructs a synthetic network to simulate messaging.
+* **Physical Contact Layer**: Construct a synthetic network to characterise physical connections between individuals.
+* **Information Layer**: Construct a synthetic network to simulate messaging.
 
 #### 2) Information Diffusion and Epidemic Spreading:
-* Simulates the diffusion of information and its effect on epidemic transmission.
-* Models how social factors, such as information exposure and individual trust, influence behavior during an epidemic, including protective actions and vaccination uptake.
-* Incorporates dynamic individual protection levels based on personal perceptions, behavior changes, and exposure to information.
+* Simulate the diffusion of information and its effect on epidemic transmission.
+* Model how social factors, such as information exposure and individual trust, influence behavior during an epidemic, including protective actions and vaccination uptake.
+* Incorporate dynamic individual protection levels based on personal perceptions, behavior changes, and exposure to information.
 
 #### 3) Vaccination Strategy Updates:
 * Calculate the payoff of individuals based on pairwise comparison rules for strategy updates.
@@ -469,7 +469,7 @@ Follow these steps to run the tool:
    ```
 
   * **Output**:
-    * `protection_levels.txt`: the individual protection level.
+    * `protection_levels.txt`: Individual protection level.
 
 3. **Information Diffusion and Epidemic Spreading**:
 
@@ -483,8 +483,8 @@ Follow these steps to run the tool:
 
   * **Input**: `network_data.txt` and `protection_levels.txt`
   * **Output**:
-    * ``PA.txt``: the fraction of aware individuals.
-    * ``PI.txt``: the fraction of infected individuals.
+    * ``PA.txt``: The fraction of aware individuals.
+    * ``PI.txt``: The fraction of infected individuals.
 
 4. **Vaccination Strategy Updates**:
 
@@ -498,15 +498,15 @@ Follow these steps to run the tool:
 
   * **Input**: `network_data.txt`, `protection_levels.txt`, `PA.txt`` and ``PI.txt``.
   * **Output**:
-    * ``result_x.txt``: the fraction of vaccinated individuals.
-    * ``result_I.txt``: the fraction of infected individuals.
+    * ``result_x.txt``: The fraction of vaccinated individuals.
+    * ``result_I.txt``: The fraction of infected individuals.
 
 ## 7. Furture Work
 As **ViralDynamic** continues to evolve, our primary goal is to enhance its capabilities and expand its applicability in epidemic modeling, data analysis, and decision-making processes. Below are some key areas we plan to focus on in the future:
 * **Integration of Multi-Source Data**: We aim to expand **ViralDynamic**' ability to integrate diverse data sources, including real-time data from wearable devices, health monitoring systems, and social media platforms. This will improve the accuracy of epidemic spread predictions by incorporating more granular, real-time user behavior data.
 
-* **Personalized Epidemic Modeling**: Moving forward, **ViralDynamic** will focus on personalizing epidemic simulations to account for heterogeneous population characteristics. This will include simulating individual-level responses to public health measures, such as vaccination campaigns or social distancing, based on factors like health status, risk perception, and behavioral tendencies.
+* **Personalized Epidemic Modeling**: **ViralDynamic** will focus on personalizing epidemic simulations to account for heterogeneous population characteristics. This will include simulating individual-level responses to public health measures, such as vaccination campaigns or isolation, based on factors like health status, risk perception, and behavioral tendencies.
 
 * **Advanced Machine Learning Algorithms for Prediction**: We plan to incorporate cutting-edge machine learning techniques, including reinforcement learning and deep learning models, to enhance the framework's prediction accuracy. By integrating these models, **ViralDynamic** will be able to forecast epidemic dynamics with even greater precision, enabling more proactive public health interventions.
 
-* **Collaborative and Scalable Solutions**: In the future, we envision **ViralDynamic** as a collaborative platform that allows for easy integration with other public health and epidemiology tools. By providing scalable solutions for large-scale epidemic simulations, **ViralDynamic** will contribute to global epidemic preparedness and response efforts.
+* **Collaborative and Scalable Solutions**: We envision **ViralDynamic** as a collaborative platform that allows for easy integration with other public health and epidemiology tools. By providing scalable solutions for large-scale epidemic simulations, **ViralDynamic** will contribute to global epidemic preparedness and response efforts.
