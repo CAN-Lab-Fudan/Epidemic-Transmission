@@ -501,7 +501,7 @@ Follow these steps to run the tool:
     * ``result_x.txt``: The fraction of vaccinated individuals.
     * ``result_I.txt``: The fraction of infected individuals.
 
-## 7. Furture Work
+## 7. Future Work
 As **ViralDynamic** continues to evolve, our primary goal is to enhance its capabilities and expand its applicability in epidemic modeling, data analysis, and decision-making processes. Below are some key areas we plan to focus on in the future:
 * **Integration of Multi-Source Data**: We aim to expand **ViralDynamic**' ability to integrate diverse data sources, including real-time data from wearable devices, health monitoring systems, and social media platforms. This will improve the accuracy of epidemic spread predictions by incorporating more granular, real-time user behavior data.
 
